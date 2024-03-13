@@ -7,7 +7,7 @@ List adalah struktur data yang berguna untuk menampung banyak elemen. Terdapat d
 
 Dalam hal ini berlaku N adalah jumlah seluruh elemen yang tertampung dalam list.
 
-Dalam bahasa C++, array list diimplementasikan dengan tipe data **std::vector** yang berada dalam header `<vector>`, kemudian linked list diimplementasikan dengan tipe data **std::list** yang berada dalam header `<list>`.
+Dalam bahasa Java, array list diimplementasikan dengan tipe data **List<tipe_data>** yang berada dalam header `<java.util.*>`. `<java.util.*>` sendiri mencakup banyak hal seperti List, Stack, Queue, dll. Jika anda hanya membutuhkan list secara spesifik, anda dapat menggunakan `<java.util.list>`.
 
 ## 1.1. Array List (std::vector)
 
