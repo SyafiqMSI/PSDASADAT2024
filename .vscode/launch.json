@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "stl_queue",
+      "request": "launch",
+      "mainClass": "Source.Bab1.stl_queue",
+      "projectName": "PSDASADAT2024_a8c4c866"
+    },
+    {
+      "type": "java",
+      "name": "stl_stack",
+      "request": "launch",
+      "mainClass": "Source.Bab1.stl_stack",
+      "projectName": "PSDASADAT2024_a8c4c866"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "e:/.KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab1",
+      "program": "e:/.KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab1/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

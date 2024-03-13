@@ -4,13 +4,13 @@ Stack adalah struktur data LIFO (last-in-first-out) yang artinya elemen yang dim
 
 ![Ilustrasi](https://visualgo.net/img/stack_illustration.png)
 
-Dalam bahasa Java, stack dapat diakses melalui header `<stack>` dan memanfaatkan linked list sebagai tempat penyimpanannya.
+Dalam bahasa Java, stack dapat diakses melalui header `Stack` dan memanfaatkan linked list sebagai tempat penyimpanannya.
 
 ## 2.1. Deklarasi
 
 Contoh:
 ```java
-std::stack<std::string> books;
+Stack<Integer> usia = new Stack<>();
 ```
 
 ## 2.2. Operasi
@@ -26,14 +26,14 @@ books.push("HTML for Babies");
 
 Mengakses elemen yang berada di bagian atas stack:
 ```java
-std::string pick = books.peek();
+String pick = books.peek();
 ```
 
 ### Pop
 
 Mengeluarkan elemen yang berada di bagian atas stack:
 ```java
-books.pop();
+String removed = books.pop();
 ```
 
 ## Selengkapnya
