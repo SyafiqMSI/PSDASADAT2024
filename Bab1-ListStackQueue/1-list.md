@@ -2,8 +2,13 @@
 
 List adalah struktur data yang berguna untuk menampung banyak elemen. Terdapat dua contoh implementasinya, yaitu **array list** dan **linked list**. Array list adalah implementasi list yang menggunakan array sebagai penampungnya, kemudian linked list menggunakan self-referential structure dan pointer sebagai penampungnya.
 
-- Array list memiliki kelebihan yaitu elemen di suatu posisi dapat diakses dengan cepat (kompleksitas O(1)), namun memiliki kekurangan yaitu proses memasukkan dan mengeluarkan elemen dalam list membutuhkan waktu yang lebih lama (kompleksitas O(N)) serta mekanisme alokasi memori yang lebih banyak (kompeksitas O(K) di mana K >= N dan K adalah kapasitas maksimum array) apabila ingin menghemat waktu saat memasukkan elemen di masa mendatang.
-- Lalu linked list memiliki kelebihan yaitu proses memasukkan dan mengeluarkan elemen membutuhkan waktu yang singkat (kompleksitas O(1)) dan dapat menggunakan memori seefisien mungkin (kompleksitas O(N)), namun untuk mengakses elemen di posisi tertentu membutuhkan waktu yang lebih lama (kompleksitas O(N)).
+**Array List**
+Kelebihan:
+
+    - Akses Elemen Cepat: ArrayList menyediakan akses ke elemen secara acak (random access) dengan menggunakan indeks, yang membuat operasi seperti get() dan set() memiliki kompleksitas           waktu 
+        O(1).
+    - Iterasi Cepat: ArrayList cocok untuk iterasi linier dari elemen, karena memiliki implementasi array yang berurutan.
+    - Lalu linked list memiliki kelebihan yaitu proses memasukkan dan mengeluarkan elemen membutuhkan waktu yang singkat (kompleksitas O(1)) dan dapat menggunakan memori seefisien mungkin         (kompleksitas O(N)), namun untuk mengakses elemen di posisi tertentu membutuhkan waktu yang lebih lama (kompleksitas O(N)).
 
 Dalam hal ini berlaku N adalah jumlah seluruh elemen yang tertampung dalam list.
 
