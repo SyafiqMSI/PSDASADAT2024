@@ -17,6 +17,7 @@ Kekurangan:
 
 - Memerlukan Alokasi Memori Lebih Besar: ArrayList memerlukan alokasi memori yang lebih besar karena menyimpan elemen dalam array kontigu.
 
+
 **Linked List**
 
 Kelebihan:
@@ -30,6 +31,7 @@ Kekurangan:
 - Akses Elemen Lambat: LinkedList tidak menyediakan akses acak, sehingga operasi seperti get() memiliki kompleksitas waktu O(n) karena harus melakukan iterasi dari awal atau akhir untuk mencapai elemen yang diinginkan.
 
 - Iterasi Lambat: Iterasi di LinkedList memerlukan navigasi melalui setiap node, yang dapat memakan waktu lebih lama daripada ArrayList.
+
 Dalam bahasa Java, array list diimplementasikan dengan tipe data **List<tipe_data>** yang berada dalam header `<java.util.*>`. `<java.util.*>` sendiri mencakup banyak hal seperti List, Stack, Queue, dll. Jika anda hanya membutuhkan list secara spesifik, anda dapat menggunakan `<java.util.list>`.
 
 ## 1.1. Array List (List<tipe_data>)
