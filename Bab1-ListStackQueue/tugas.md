@@ -2,10 +2,10 @@
 
 NOTE
 
-1. Gunakan bahasa **C++**
-2. Kumpulkan semua source code pada assignment Google Classroom **(jangan di-ZIP)**, diberi format: **NamaKelas_PSDA01_NIM_NamaLengkap_Nomor Soal.cpp**, 
+1. Gunakan bahasa **Java**
+2. Kumpulkan semua source code pada assignment Google Classroom **(jangan di-ZIP)**, diberi format: **NamaKelas_PSDASADAT01_NIM_NamaLengkap_Nomor Soal.cpp**, 
 
-   misal apabila mengumpulkan nomor 1 : **C_PSDA01_L0122102_MuhammadAnnys_1.cpp**
+   misal apabila mengumpulkan nomor 1 : **B_PSDASADAT01_L0122002_AbrahamWillemHersubagyo_1.java**
 
 ## No. 1 - List
 
@@ -33,7 +33,7 @@ Melon
 Semangka
 ```
 
-Anda boleh menggunakan array list (std::vector) ataupun linked list (std::list)
+Anda boleh menggunakan array list (ArrayList) ataupun linked list (list)
 
 ## No. 2 - Stack
 
