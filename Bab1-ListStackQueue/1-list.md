@@ -9,44 +9,51 @@ Dalam hal ini berlaku N adalah jumlah seluruh elemen yang tertampung dalam list.
 
 Dalam bahasa Java, array list diimplementasikan dengan tipe data **List<tipe_data>** yang berada dalam header `<java.util.*>`. `<java.util.*>` sendiri mencakup banyak hal seperti List, Stack, Queue, dll. Jika anda hanya membutuhkan list secara spesifik, anda dapat menggunakan `<java.util.list>`.
 
-## 1.1. Array List (std::vector)
+## 1.1. Array List (List<tipe_data>)
 
 ### Deklarasi
 
 Contoh:
 ```c++
-std::vector<int> fav_numbers;
+list<Integer> number = new ArrayList<Integer>();
 ```
 
 ### Operasi
 
 Menambahkan elemen di akhir:
-```c++
-fav_numbers.push_back(24);
+```java
+number.add(obj);
+```
+
+Secara default, keyword add menambahkan elemen terbaru di paling belakang. Namun ada cara lain untuk menambahkan elemen pada index terakhir dengan cara mendapatkan ukuran List tersebut terlebih dahulu. 
+
+Contoh:
+```java
+number.add(list.size(), obj);
 ```
 
 Menambahkan elemen di indeks ke-2:
-```c++
-fav_numbers.insert(fav_numbers.begin() + 2, 48);
+```java
+number.add(2, obj);
 ```
 
 Menghapus elemen di indeks terakhir:
-```c++
-fav_numbers.pop_back();
+```java
+number.remove(;
 ```
 
 Menghapus elemen di indeks ke-2:
-```c++
+```java
 fav_numbers.erase(fav_numbers.begin() + 2);
 ```
 
 Mengakses elemen di indeks ke-2:
-```c++
+```java
 int num = fav_numbers[2];
 ```
 
 Iterasi seluruh elemen:
-```c++
+```java
 for (int i = 0; i < fav_numbers.size(); i++) {
     std::cout << "fav_numbers[" << i << "] : " << fav_numbers[i] << std::endl;
 }
