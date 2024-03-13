@@ -2,7 +2,7 @@
 
 List adalah struktur data yang berguna untuk menampung banyak elemen. Terdapat dua contoh implementasinya, yaitu **array list** dan **linked list**.
 
-**Array List**
+### Array List
 
 Kelebihan:
 
@@ -17,7 +17,7 @@ Kekurangan:
 - Memerlukan Alokasi Memori Lebih Besar: ArrayList memerlukan alokasi memori yang lebih besar karena menyimpan elemen dalam array kontigu.
 
 
-**Linked List**
+### Linked List
 
 Kelebihan:
 
