@@ -1,6 +1,6 @@
 # 1 - Konsep List
 
-List adalah struktur data yang berguna untuk menampung banyak elemen. Terdapat dua contoh implementasinya, yaitu **array list** dan **linked list**. Array list adalah implementasi list yang menggunakan array sebagai penampungnya, kemudian linked list menggunakan self-referential structure dan pointer sebagai penampungnya.
+List adalah struktur data yang berguna untuk menampung banyak elemen. Terdapat dua contoh implementasinya, yaitu **array list** dan **linked list**.
 
 **Array List**
 
