@@ -6,13 +6,30 @@ List adalah struktur data yang berguna untuk menampung banyak elemen. Terdapat d
 
 Kelebihan:
 
-    - Akses Elemen Cepat: ArrayList menyediakan akses ke elemen secara acak (random access) dengan menggunakan indeks, yang membuat operasi seperti get() dan set() memiliki kompleksitas           waktu 
+- Akses Elemen Cepat: ArrayList menyediakan akses ke elemen secara acak (random access) dengan menggunakan indeks, yang membuat operasi seperti get() dan set() memiliki kompleksitas           waktu 
         O(1).
-    - Iterasi Cepat: ArrayList cocok untuk iterasi linier dari elemen, karena memiliki implementasi array yang berurutan.
-    - Lalu linked list memiliki kelebihan yaitu proses memasukkan dan mengeluarkan elemen membutuhkan waktu yang singkat (kompleksitas O(1)) dan dapat menggunakan memori seefisien mungkin         (kompleksitas O(N)), namun untuk mengakses elemen di posisi tertentu membutuhkan waktu yang lebih lama (kompleksitas O(N)).
+- Iterasi Cepat: ArrayList cocok untuk iterasi linier dari elemen, karena memiliki implementasi array yang berurutan.
+- Lalu linked list memiliki kelebihan yaitu proses memasukkan dan mengeluarkan elemen membutuhkan waktu yang singkat (kompleksitas O(1)) dan dapat menggunakan memori seefisien mungkin         (kompleksitas O(N)), namun untuk mengakses elemen di posisi tertentu membutuhkan waktu yang lebih lama (kompleksitas O(N)).
 
-Dalam hal ini berlaku N adalah jumlah seluruh elemen yang tertampung dalam list.
+Kekurangan:
 
+- Penambahan/Penghapusan Lambat di Tengah: Ketika menambah atau menghapus elemen di tengah ArrayList, elemen-elemen di belakangnya harus digeser, yang dapat memakan waktu O(n) di mana n adalah jumlah elemen yang digeser.
+
+- Memerlukan Alokasi Memori Lebih Besar: ArrayList memerlukan alokasi memori yang lebih besar karena menyimpan elemen dalam array kontigu.
+
+**Linked List**
+
+Kelebihan:
+
+- Penambahan/Penghapusan Cepat di Tengah: LinkedList dapat menambah dan menghapus elemen dengan cepat di tengah list karena hanya memerlukan manipulasi referensi antara node.
+
+- Memerlukan Alokasi Memori yang Fleksibel: LinkedList hanya memerlukan alokasi memori yang tepat untuk setiap elemen, yang membuatnya lebih fleksibel dalam pengelolaan memori.
+
+Kekurangan:
+
+- Akses Elemen Lambat: LinkedList tidak menyediakan akses acak, sehingga operasi seperti get() memiliki kompleksitas waktu O(n) karena harus melakukan iterasi dari awal atau akhir untuk mencapai elemen yang diinginkan.
+
+- Iterasi Lambat: Iterasi di LinkedList memerlukan navigasi melalui setiap node, yang dapat memakan waktu lebih lama daripada ArrayList.
 Dalam bahasa Java, array list diimplementasikan dengan tipe data **List<tipe_data>** yang berada dalam header `<java.util.*>`. `<java.util.*>` sendiri mencakup banyak hal seperti List, Stack, Queue, dll. Jika anda hanya membutuhkan list secara spesifik, anda dapat menggunakan `<java.util.list>`.
 
 ## 1.1. Array List (List<tipe_data>)
