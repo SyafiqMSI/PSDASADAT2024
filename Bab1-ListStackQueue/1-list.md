@@ -39,101 +39,86 @@ number.add(2, obj);
 
 Menghapus elemen di indeks terakhir:
 ```java
-number.remove(;
+number.remove(list.size() - 1);
 ```
 
 Menghapus elemen di indeks ke-2:
 ```java
-fav_numbers.erase(fav_numbers.begin() + 2);
+number.remove(2);
+```
+
+Jika anda ingin menghapus nilai 2 secara spesifik (bukan index, namun elemen yang bernilai 2) maka anda dapat menggunakan ini:
+```java
+number.remove(Integer.valueOf(2));
 ```
 
 Mengakses elemen di indeks ke-2:
 ```java
-int num = fav_numbers[2];
+number.get(2);
 ```
 
 Iterasi seluruh elemen:
 ```java
-for (int i = 0; i < fav_numbers.size(); i++) {
-    std::cout << "fav_numbers[" << i << "] : " << fav_numbers[i] << std::endl;
+for (int i = 0; i < number.size(); i++) {
+    System.out.println("number: [" + i + "] : " + number.get(i));
 }
 ```
 
-## 1.2. Linked List (std::list)
+## 1.2. Linked List (LinkedList<obj>)
 
 ### Deklarasi
 
 Contoh:
-```c++
-std::list<int> fav_numbers;
+```java
+List<obj> number = new LinkedList<obj>();
 ```
 
 ### Operasi
 
 Menambahkan elemen di awal:
-```c++
-fav_numbers.insert(fav_numbers.begin(), 24);
-// atau:
-fav_numbers.push_front(24);
+```java
+number.addFirst(obj);
 ```
 
 Menambahkan elemen di akhir:
-```c++
-fav_numbers.insert(fav_numbers.end(), 96);
-// atau:
-fav_numbers.push_back(96);
+```java
+number.add(obj);
 ```
 
 Menambahkan elemen di posisi ke-3:
-```c++
-fav_numbers.insert(std::next(fav_numbers.begin(), 2), 48); // #include <iterator> terlebih dahulu
-// atau:
-fav_numbers.insert(it, 48); // asumsi `it` adalah iterator yang sudah mengarah ke elemen ke-3
+```java
+number.add(3, obj);
 ```
 
-Menghapus elemen di awal (kompleksitas O(N)):
-```c++
-fav_numbers.erase(fav_numbers.begin());
-// atau:
-fav_numbers.pop_front();
+Menghapus elemen di awal (kompleksitas O(1)):
+```java
+number.removeFirst();
 ```
 
-Menghapus elemen di akhir (kompleksitas O(N)):
-```c++
-fav_numbers.erase(fav_numbers.end());
-// atau:
-fav_numbers.pop_back();
+Menghapus elemen di akhir (kompleksitas O(1)):
+```java
+number.removeLast();
 ```
 
 Mengakses elemen di posisi ke-3:
-```c++
-std::list<int>::iterator it = std::next(fav_numbers.begin(), 2);
-int num = *it;
-// atau bisa langsung:
-int num = *std::next(fav_numbers.begin(), 2);
-// #include <iterator> terlebih dahulu apabila ingin menggunakan std::next
+```java
+number.get(3);
 ```
 
 Menghapus elemen di posisi ke-3:
-```c++
-fav_numbers.erase(std::next(fav_numbers.begin(), 2)); // #include <iterator> terlebih dahulu
-// atau:
-fav_numbers.erase(it); // asumsi `it` adalah iterator yang sudah mengarah ke elemen ke-3
+```java
+number.remove(3);
 ```
 
 Iterasi seluruh elemen:
-```c++
-for (
-    std::list<int>::iterator it = fav_numbers.begin();
-    it != fav_numbers.end();
-    ++it
-) {
-    std::cout << "fav_number : " << *it << std::endl;
+```java
+for (int i = 0; i < number.size(); i++) {
+    System.out.println("number: [" + i + "] : " + number.get(i));
 }
 ```
 
 ## Selengkapnya
 
-- [C++ Vector](https://en.cppreference.com/w/cpp/container/vector)
-- [C++ List](https://en.cppreference.com/w/cpp/container/list)
-- [C++ Iterator](https://en.cppreference.com/w/cpp/named_req/BidirectionalIterator)
+- [Java ArrayList](https://www.geeksforgeeks.org/arraylist-in-java/)
+- [Java LinkedList]([https://en.cppreference.com/w/cpp/container/list](https://www.geeksforgeeks.org/linked-list-in-java/))
+- [Java Iterator]([https://en.cppreference.com/w/cpp/named_req/BidirectionalIterato](https://www.geeksforgeeks.org/iterators-in-java/)https://www.geeksforgeeks.org/iterators-in-java/)
