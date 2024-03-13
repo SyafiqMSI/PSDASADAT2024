@@ -1,4 +1,4 @@
-<h1 align="center"> Praktikum Struktur Data dan Algoritma <br /> S1 Informatika UNS </h1>
+<h1 align="center"> Praktikum Struktur Data dan Algoritma <br /> S1 Sains Data UNS </h1>
 <p align ="center">  <img width = "440" height "248" src = "Material\coverRepo.png" </p>
 <h3 align="center"> Tahun Akademik 2023/2024 Semester Genap </h3>
 <h3 align ="center">  >> <a align = "center" href = "Material\DaftarMateri.md"> 
