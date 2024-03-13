@@ -3,6 +3,7 @@
 List adalah struktur data yang berguna untuk menampung banyak elemen. Terdapat dua contoh implementasinya, yaitu **array list** dan **linked list**. Array list adalah implementasi list yang menggunakan array sebagai penampungnya, kemudian linked list menggunakan self-referential structure dan pointer sebagai penampungnya.
 
 **Array List**
+
 Kelebihan:
 
     - Akses Elemen Cepat: ArrayList menyediakan akses ke elemen secara acak (random access) dengan menggunakan indeks, yang membuat operasi seperti get() dan set() memiliki kompleksitas           waktu 
