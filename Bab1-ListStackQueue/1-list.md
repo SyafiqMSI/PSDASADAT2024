@@ -34,7 +34,7 @@ Kekurangan:
 
 Dalam bahasa Java, array list diimplementasikan dengan tipe data **List<tipe_data>** yang berada dalam header `<java.util.*>`. `<java.util.*>` sendiri mencakup banyak hal seperti List, Stack, Queue, dll. Jika anda hanya membutuhkan list secara spesifik, anda dapat menggunakan `<java.util.list>`.
 
-## 1.1. Array List (ArrayList<obj>)
+## 1.1. Array List (ArrayList<object>)
 
 ### Deklarasi
 
@@ -89,7 +89,7 @@ for (int i = 0; i < number.size(); i++) {
 }
 ```
 
-## 1.2. Linked List (LinkedList<obj>)
+## 1.2. Linked List (LinkedList<object>)
 
 ### Deklarasi
 
