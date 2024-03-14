@@ -3,7 +3,7 @@
 NOTE
 
 1. Gunakan bahasa **Java**
-2. Kumpulkan semua source code pada assignment Google Classroom **(jangan di-ZIP)**, diberi format: **NamaKelas_PSDASADAT01_NIM_NamaLengkap_Nomor Soal.cpp**, 
+2. Kumpulkan semua source code pada assignment Google Classroom **(jangan di-ZIP)**, diberi format: **NamaKelas_PSDASADAT01_NIM_NamaLengkap_Nomor Soal.java**, 
 
    misal apabila mengumpulkan nomor 1 : **B_PSDASADAT01_L0122002_AbrahamWillemHersubagyo_1.java**
 
