@@ -1,16 +1,17 @@
-#include <iostream>
-#include <vector> //std::vector
+import java.util.LinkedList;
 
-int main() {
-    std::vector<int> angka;
-    //menambah elemen
-    for (size_t i=0; i<5; i++) {
-        angka.push_back((i+1)*10);
-    }
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Integer> angka = new LinkedList<>();
 
-    //menampilkan elemen
-    for (size_t i=0; i<angka.size(); i++) {
-        std::cout<<angka[i]<<" ";
+        // Menambahkan elemen
+        for (int i = 0; i < 5; i++) {
+            angka.add((i + 1) * 10);
+        }
+
+        // Menampilkan elemen dengan loop for-each
+        for (int value : angka) {
+            System.out.print(value + " ");
+        }
     }
-    return 0;
 }
