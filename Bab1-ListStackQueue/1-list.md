@@ -11,8 +11,6 @@ Kelebihan:
 
 Kekurangan:
 
-- Penambahan/Penghapusan Lambat di Tengah: Ketika menambah atau menghapus elemen di tengah ArrayList, elemen-elemen di belakangnya harus digeser, yang dapat memakan waktu O(n) di mana n adalah jumlah elemen yang digeser.
-
 - Memerlukan Alokasi Memori Lebih Besar: ArrayList memerlukan alokasi memori yang lebih besar karena menyimpan elemen dalam array kontigu.
 
 - Penambahan dan penghapusan elemen membutuhkan waktu yang lebih lama dari linked list karena setiap elemen harus digeser setelah adanya penambahan atau penghapusan elemen baru. Kompleksitas waktunya adalah O(n) dengan n adalah jumlah elemen yang harus digeser.
