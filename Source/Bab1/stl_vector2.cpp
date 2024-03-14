@@ -1,22 +1,28 @@
-#include <iostream>
-#include <vector>
+import java.util.LinkedList;
+import java.util.ListIterator;
 
-int main() {
-    std::vector<int> angka = {10, 20, 30, 40, 50};
+public class Main {
+    public static void main(String[] args) {
+        LinkedList<Integer> angka = new LinkedList<>();
+        angka.add(10);
+        angka.add(20);
+        angka.add(30);
+        angka.add(40);
+        angka.add(50);
 
-    //menampilkan elemen 1 sampai 5
-    std::cout<<"Iterator maju: "<<std::endl;
-    std::vector<int>::iterator it;
-    for (it=angka.begin(); it!=angka.end(); ++it) {
-        std::cout<<*it<<" ";
+        // Menampilkan elemen maju
+        System.out.println("Iterator maju:");
+        ListIterator<Integer> it = angka.listIterator();
+        while (it.hasNext()) {
+            System.out.print(it.next() + " ");
+        }
+        System.out.println();
+
+        // Menampilkan elemen mundur
+        System.out.println("Iterator mundur:");
+        ListIterator<Integer> it1 = angka.listIterator(angka.size());
+        while (it1.hasPrevious()) {
+            System.out.print(it1.previous() + " ");
+        }
     }
-    std::cout<<std::endl;
-
-    std::cout<<"Iterator mundur: "<<std::endl;
-    std::vector<int>::reverse_iterator it1;
-    for (it1=angka.rbegin(); it1!=angka.rend(); ++it1) {
-        std::cout<<*it1<<" ";
-    }
-
-    return 0;
 }
