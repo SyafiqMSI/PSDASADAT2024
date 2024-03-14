@@ -8,7 +8,6 @@ Kelebihan:
 
 - Akses Elemen Cepat: ArrayList menyediakan akses ke elemen secara acak (random access) dengan menggunakan indeks, yang membuat operasi seperti get() dan set() memiliki kompleksitas           waktu O(1).
 - Iterasi Cepat: ArrayList cocok untuk iterasi linier dari elemen, karena memiliki implementasi array yang berurutan.
-- Penambahan dan penghapusan elemen membutuhkan waktu yang lebih lama dari linked list karena setiap elemen harus digeser setelah adanya penambahan atau penghapusan elemen baru. Kompleksitas waktunya adalah O(n) dengan n adalah jumlah elemen yang harus digeser.
 
 Kekurangan:
 
@@ -16,6 +15,7 @@ Kekurangan:
 
 - Memerlukan Alokasi Memori Lebih Besar: ArrayList memerlukan alokasi memori yang lebih besar karena menyimpan elemen dalam array kontigu.
 
+- Penambahan dan penghapusan elemen membutuhkan waktu yang lebih lama dari linked list karena setiap elemen harus digeser setelah adanya penambahan atau penghapusan elemen baru. Kompleksitas waktunya adalah O(n) dengan n adalah jumlah elemen yang harus digeser.
 
 ### Linked List
 
