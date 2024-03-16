@@ -64,6 +64,7 @@ Suatu saat Ronald ingin mengurutkan tumpukan buku tersebut agar terurut dan menj
 - Database Management System (Expert Edition)
 
 Buatlah program yang mensimulasikan permasalahan tersebut menggunakan stack! Program tidak harus menampilkan isi stack ke layar ataupun menerima input. Asisten akan menilai ketepatan dari source code yang dibuat.
+
 Lakukan pop pada stack, masukkan ke array list, lalu dari array list tersebut, masukkan lagi ke dalam stack sesuai seperti pada urutan yang baru. Jangan membuat ulang stack.
 
 **DILARANG KERAS MEMBUAT ULANG STACK**
