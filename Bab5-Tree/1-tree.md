@@ -23,32 +23,48 @@ Sebagai sebuah struktur data, Tree memiliki beberapa operasi yang dapat digunaka
 
 Sebelum membuat operasi-operasi tersebut, kita harus membuat struktur data Tree kita terlebih dahulu, karena C++ tidak memiliki struktur Tree bawaan. Implementasi Tree dapat dilakukan dengan berbagai cara, misalkan menggunakan class dan pointer untuk menandakan hubungan. Namun, kita akan menggunakan struct untuk menyimpan data dan vector untuk menyimpan children-children dari Tree kita.
 
-```cpp
+```java
 // ...
-struct Node {
+import java.util.ArrayList;
+import java.util.List;
+
+class Node {
     int m_data;
-    vector<Node> m_children;
-};
+    List<Node> m_children;
+}
 // ...
 ```
 
 Kita juga dapat menambahkan constructor untuk mempermudah pemrograman kita
 
-```cpp
+```java
 // ...
-Node(int data) {
-    m_data = data;
+public class Node {
+    private int m_data;
+
+    // Constructor
+    Node(int data) {
+        m_data = data;
+        m_children = new ArrayList<>();
+    }
+    // Method lainnya
+    // ...
 }
 // ...
 ```
 
 Lalu, kita dapat mendefinisikan `node` - `node` yang akan kita gunakan pada main seperti di bawah ini.
 
-```cpp
+```java
 // ...
-Node root(5);
-Node child_0_0(3);
-Node child_0_1(4);
+public class Main {
+    public static void main(String[] args) {
+        Node root = new Node(5);
+        Node child_0_0 = new Node(3);
+        Node child_0_1 = new Node(4);
+        // ...
+    }
+}
 // ...
 ```
 
@@ -58,10 +74,10 @@ Insertion adalah operasi yang didefinisikan sebagai aksi memasukkan nilai untuk 
 
 Pada praktikum kali ini, karena `children` diimplementasikan menggunakan vector dan di-insert menggunakan pushback, maka semua insertion yang dilakukan merupakan insertion sebagai `children` yang paling kanan. Kalian dapat memodifikasi rancangan ini dengan kemampuan menyisipkan masukan di list/array.
 
-```cpp
+```java
 // ...
 void insert(Node node) {
-    m_children.push_back(node);
+    m_children.add(node);
 }
 // ...
 ```
@@ -72,18 +88,16 @@ Cara penggunaan dari metode ini adalah memanggil metode insert dari node `parent
 
 Operasi penghapusan pada struktur data tree dilakukan dengan cara menghapus node sesuai dengan urutan yang kita inginkan. Kita dapat membuat metode delete kita seperti di bawah ini.
 
-```cpp
+```java
 // ...
-bool deleteNodeIndex(unsigned int index) {
-    if (m_children.empty()) {
+boolean deleteNodeIndex(int index) {
+    if (m_children.isEmpty()) {
         return false;
-    }
-    else {
+    } else {
         if (m_children.size() <= index) {
             return false;
-        }
-        else {
-            m_children.erase(m_children.begin() + index);
+        } else {
+            m_children.remove(index);
             return true;
         }
     }
@@ -115,33 +129,36 @@ Postorder
 > Untuk penggunaan Tree traversal secara interaktif, silakan melihat video praktikum
 Kita dapat membuat metode traversal kita seperti potongan di bawah ini. Perhatikan bagaimana kita menggunakan `depth` untuk memberikan _style_ ke kode kita supaya lebih mudah dipahami hubungannya dengan `node` lainnya (apakah ancestor, sibling, atau descendant).
 
-```cpp
+```java
 // ...
-void _preOrder(unsigned int depth = 0) {
-    for (unsigned int i = 0; i < depth; i++) {
-        cout << "--";
+void _preOrder(int depth) {
+    for (int i = 0; i < depth; i++) {
+        System.out.print("--");
     }
-    cout << "> " << m_data << '\n';
-    for (unsigned int i = 0; i < m_children.size(); i++) {
-        m_children[i]._preOrder(depth + 1);
+    System.out.println("> " + m_data);
+    for (Node child : m_children) {
+        child._preOrder(depth + 1);
     }
 }
+
 void preOrder() {
-    cout << "Preorder Traversal: \n";
-    _preOrder();
+    System.out.println("Preorder Traversal: ");
+    _preOrder(0);
 }
-void _postOrder(unsigned int depth = 0) {
-    for (unsigned int i = 0; i < m_children.size(); i++) {
-        m_children[i]._postOrder(depth + 1);
+
+void _postOrder(int depth) {
+    for (Node child : m_children) {
+        child._postOrder(depth + 1);
     }
-    for (unsigned int i = 0; i < depth; i++) {
-        cout << "--";
+    for (int i = 0; i < depth; i++) {
+        System.out.print("--");
     }
-    cout << "> " << m_data << '\n';
+    System.out.println("> " + m_data);
 }
+
 void postOrder() {
-    cout << "Postorder Traversal: \n";
-    _postOrder();
+    System.out.println("Postorder Traversal: ");
+    _postOrder(0);
 }
 // ...
 ```
@@ -152,21 +169,21 @@ Di sini kita akan mencoba menerapkan gambar Tree di atas dalam struktur data yan
 
 1. Pertama, kita dapat mendeklarasikan objek-objek `node` kita. Kita akan menggunakan variabel `root` untuk root dan `child_{id}` untuk penamaan children.
 
-```cpp
+```java
 // ...
-Node root(2);
-Node child_0(7);
-Node child_1(5);
-Node child_2(2);
-Node child_3(10);
-Node child_4(6);
-Node child_5(9);
+Node root = new Node(2);
+Node child_0 = new Node(7);
+Node child_1 = new Node(5);
+Node child_2 = new Node(2);
+Node child_3 = new Node(10);
+Node child_4 = new Node(6);
+Node child_5 = new Node(9);
 // ...
 ```
 
 2. Lalu, kita dapat memasukkan child ke parentnya satu-persatu menggunakan insert.
 
-```cpp
+```java
 // ...
 child_0.insert(child_2);
 child_0.insert(child_3);
@@ -182,10 +199,11 @@ root.insert(child_1);
 > Mengapa kita melakukan insert dari bawah? Mengapa kita tidak melakukan insert mulai dari `root`? Apa yang terjadi jika kita melakukan insert mulai dari `root`? Mengapa hal itu bisa terjadi?
 3. Setelah ini, kalian dapat menggunakan operasi lainnya seperti delete atau traversal. Mari kita coba melakukan Preorder traversal
 
-```cpp
-// Tree.cpp
+```java
+// Tree.java
 // ...
 root.preOrder();
+root.postOrder();
 // ...
 ```
 
