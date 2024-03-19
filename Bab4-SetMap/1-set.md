@@ -8,7 +8,7 @@ Himpunan pada matematika juga memiliki operasi untuk mengecek suatu keanggotaan 
 
 Pada umumnya, himpunan direpresentasikan dalam bentuk binary search tree supaya proses menambah, menghapus, dan mencari elemen bisa dilakukan seefisien mungkin (kompleksitas O(log N)).
 
-Struktur data himpunan terdapat dalam header `<set>` pada Java.
+Dalam Java, struktur data Map terletak dalam paket `<java.util>`.
 
 ## Deklarasi
 

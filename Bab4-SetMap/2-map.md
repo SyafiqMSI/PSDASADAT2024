@@ -8,77 +8,76 @@ Dalam praktiknya, map sering digunakan sebagai solusi pengganti indeks berbasis 
 
 Seperti halnya set, map juga umumnya direpresentasikan dalam bentuk binary search tree supaya proses menambah, menghapus, dan mencari elemen bisa dilakukan seefisien mungkin (kompleksitas O(log N)).
 
-Dalam C++, struktur data map terletak dalam header `<map>`.
+Dalam Java, struktur data Map terletak dalam paket `<java.util>`.
 
 ## Deklarasi
 
 Mendeklarasikan map yang memetakan string ke suatu struct `Mahasiswa`:
-```c++
-std::map<std::string, Mahasiswa> data_mhs;
+```java
+Map<String, Mahasiswa> dataMhs = new HashMap<>();
 ```
 
 ## Operasi
 
 ### Assignment
 
-Mengaitkan mahasiswa dengan indeks **M0525025** dengan obyek dari struct pada map `data_mhs`:
-```c++
-Mahasiswa mhs;
-mhs.nama = "Bella Aster Kevia";
-mhs.prodi = "Informatika";
-mhs.angkatan = 2025;
-data_mhs["M0525025"] = mhs;
+Mengaitkan mahasiswa dengan indeks **L0122116** dengan obyek dari struct pada map `dataMhs`:
+```java
+Mahasiswa mhs = new Mahasiswa();
+mhs.setNama("Muhammad Syafiq Ibrahim");
+mhs.setProdi("Informatika");
+mhs.setAngkatan(2022);
+dataMhs.put("L0122116", mhs);
+
 ```
 
 ### Access
 
-Mendapatkan obyek mahasiswa dengan indeks **M0525025** dari map `data_mhs`:
-```c++
-Mahasiswa mhs = data_mhs["M0525025"];
-std::cout << "Nama: " << mhs.nama << std::endl;
-std::cout << "Prodi: " << mhs.prodi << std::endl;
-std::cout << "Angkatan: " << mhs.angkatan << std::endl;
+Mendapatkan obyek mahasiswa dengan indeks **L0122116** dari map `dataMhs`:
+```java
+Mahasiswa mhs = dataMhs.get("L0122116");
+System.out.println("Nama: " + mhs.getNama());
+System.out.println("Prodi: " + mhs.getProdi());
+System.out.println("Angkatan: " + mhs.getAngkatan());
 ```
 
-Untuk memaninpulasi obyek mahasiswa dengan indeks **M0525025** dalam map `data_mhs`:
-```c++
-data_mhs["M0525025"].nama = "Bella";
+Untuk memaninpulasi obyek mahasiswa dengan indeks **L0122116** dalam map `dataMhs`:
+```java
+dataMhs.get("L0122116").setNama("Syafiq");
 
 // atau menggunakan reference:
 
-Mahasiswa &mhs = data_mhs["M0525025"];
-mhs.nama = "Bella";
+Mahasiswa mhs = dataMhs.get("L0122116");
+mhs.setNama("Syafiq");
 ```
 
-Mengecek apakah mahasiswa dengan indeks **M0525025** berada dalam `data_mhs`:
-```c++
-if (data_mhs.count("M0525025") == 1) {
-    std::cout << "M0525025 merupakan mahasiswa UNS" << std::endl;
+Mengecek apakah mahasiswa dengan indeks **L0122116** berada dalam `dataMhs`:
+```java
+if (dataMhs.containsKey("L0122116")) {
+    System.out.println("L0122116 merupakan mahasiswa UNS");
 } else {
-    std::cout << "M0525025 bukan merupakan mahasiswa UNS" << std::endl;
+    System.out.println("L0122116 bukan merupakan mahasiswa UNS");
 }
+
 ```
 
 ### Removal
 
-Menghapus **M0525025** dari `data_mhs`:
-```c++
-data_mhs.erase("M0525025");
+Menghapus **L0122116** dari `dataMhs`:
+```java
+dataMhs.remove("L0122116");
 ```
 
 ### Iteration
 
-Iterasi seluruh elemen `data_mhs`:
-```c++
-for (
-    std::map<std::string, Mahasiswa>::iterator it = data_mhs.begin();
-    it != data_mhs.end();
-    ++it
-) {
-    std::cout << it->first << ": " << it->second.nama << std::endl;
+Iterasi seluruh elemen `dataMhs`:
+```java
+for (Map.Entry<String, Mahasiswa> entry : dataMhs.entrySet()) {
+    System.out.println(entry.getKey() + ": " + entry.getValue().getNama());
 }
+
 ```
 
 ## Selengkapnya
 
-- [C++ Map](https://en.cppreference.com/w/cpp/container/map)
+- [Java Map](https://docs.oracle.com/javase/8/docs/api/java/util/Map.html)
