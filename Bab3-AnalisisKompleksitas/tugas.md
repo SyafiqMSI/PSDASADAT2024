@@ -1,4 +1,4 @@
-# Tugas Praktikumm Analisis Kompleksitas
+# Tugas Praktikum Analisis Kompleksitas
 
 ### Analisis kompleksitas program dari tugas bab 2
 
