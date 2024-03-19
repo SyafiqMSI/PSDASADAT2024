@@ -8,13 +8,13 @@ Himpunan pada matematika juga memiliki operasi untuk mengecek suatu keanggotaan 
 
 Pada umumnya, himpunan direpresentasikan dalam bentuk binary search tree supaya proses menambah, menghapus, dan mencari elemen bisa dilakukan seefisien mungkin (kompleksitas O(log N)).
 
-Struktur data himpunan terdapat dalam header `<set>` pada C++.
+Struktur data himpunan terdapat dalam header `<set>` pada Java.
 
 ## Deklarasi
 
 Sebagai contoh:
-```c++
-std::set<int> fav_numbers;
+```java
+Set<Integer> favNumbers = new HashSet<>();
 ```
 Mendeklarasikan himpunan `fav_numbers` dengan tipe anggota elemen berupa `int`.
 
@@ -23,53 +23,63 @@ Mendeklarasikan himpunan `fav_numbers` dengan tipe anggota elemen berupa `int`.
 ### Insertion
 
 Memasukkan elemen angka `36` ke dalam himpunan `fav_numbers`:
-```c++
-fav_numbers.insert(36);
+```java
+favNumbers.add(36);
 ```
 
 ### Access
 
 Mengecek apakah angka `36` ada dalam himpunan `fav_numbers`:
-```c++
-if (fav_numbers.count(36) == 1) {
-    std::cout << "Angka 36 merupakan salah satu angka favorit saya" << std::endl;
+```java
+if (favNumbers.contains(36)) {
+    System.out.println("Angka 36 merupakan salah satu angka favorit saya");
 }
+
 ```
 
 atau menggunakan iterator:
-```c++
-std::set<int>::iterator it = fav_numbers.find(36);
-if (it != fav_numbers.end()) {
-    std::cout << "Angka 36 merupakan salah satu angka favorit saya" << std::endl;
+```java
+Iterator<Integer> it = favNumbers.iterator();
+while (it.hasNext()) {
+    Integer num = it.next();
+    if (num == 36) {
+        it.remove(); // Hapus elemen yang ditunjuk oleh iterator
+        break; // Keluar dari loop setelah elemen dihapus
+    }
 }
+
 ```
 
 ### Removal
 
 Menghapus keanggotaan angka `36` dari himpunan `fav_numbers`:
-```c++
-fav_numbers.erase(36);
+```java
+favNumbers.remove(36);
 ```
 
 atau menggunakan iterator:
-```c++
-std::set<int>::iterator it = fav_numbers.find(36); // temukan angka 36
-fav_numbers.erase(it); // hapus angka 36 yang ditunjuk oleh `it`
+```java
+Iterator<Integer> it = favNumbers.iterator();
+while (it.hasNext()) {
+    Integer num = it.next();
+    if (num == 36) {
+        it.remove(); // Hapus elemen yang ditunjuk oleh iterator
+        break; // Keluar dari loop setelah elemen dihapus
+    }
+}
+
 ```
 
 ### Iteration
 
 Iterasi seluruh anggota elemen pada himpunan `fav_numbers`:
-```c++
-for (
-    std::set<int>::iterator it = fav_numbers.begin();
-    it != fav_numbers.end();
-    ++it
-) {
-    std::cout << "Angka favorit: " << *it << std::endl;
+```java 
+for (Integer num : favNumbers) {
+    System.out.println("Angka favorit: " + num);
 }
+
 ```
 
 ## Selengkapnya
 
-- [C++ Set](https://en.cppreference.com/w/cpp/container/set)
+- [Java](https://docs.oracle.com/javase/8/docs/api/java/util/Set.html)
