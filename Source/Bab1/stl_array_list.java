@@ -1,6 +1,7 @@
+package Source.Bab1;
 import java.util.ArrayList;
 
-public class Main {
+public class stl_array_list {
     public static void main(String[] args) {
         int[] a = {10, 20, 30, 40, 50};
         ArrayList<Integer> list1 = new ArrayList<>();

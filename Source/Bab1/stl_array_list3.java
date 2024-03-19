@@ -1,7 +1,8 @@
+package Source.Bab1;
 import java.util.ArrayList;
 import java.util.function.Predicate;
 
-public class Main {
+public class stl_array_list3 {
     static boolean sama(int previous, int next) {
         return previous == next;
     }

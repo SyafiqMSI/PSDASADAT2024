@@ -1,6 +1,7 @@
+package Source.Bab1;
 import java.util.LinkedList;
 
-public class Main {
+public class stl_linked_list3 {
     public static void main(String[] args) {
         LinkedList<Integer> angka = new LinkedList<>();
         angka.add(10);
