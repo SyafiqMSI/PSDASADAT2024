@@ -17,6 +17,3 @@ Hasil penjumlahan queue fibonacci:
 Note :
 - Gunakan bahasa Java
 - Gunakan header `<queue>` supaya program lebih cepat dan efisien
-- Kumpulkan semua source code pada assignment Google Classroom (jangan di-ZIP), 
-  diberi format: NamaKelas_PSDASADAT02_NIM_NamaLengkap.java,
-	contoh: A_PSDA02_L0122002_AbrahamWillemHersubagyo.java
