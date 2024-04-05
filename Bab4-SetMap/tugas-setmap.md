@@ -60,7 +60,7 @@ public class Main {
 ```
 Benarkan kode di atas jika dirasa ada kesalahan
 
-### Nomor 2 - Map
+## Nomor 2 - Map
 
 Buatlah sebuah program dengan ketentuan dasar sebagai berikut: **(bobot: 75%)**
 
