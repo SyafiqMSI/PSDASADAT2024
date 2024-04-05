@@ -3,11 +3,15 @@
 Note:
 
 - Kerjakan dengan bahasa Java
-- Kumpulkan semua source code dengan format **Kelas_PSDA04_NIM_Nama Lengkap_Nomor Soal.java** dalam assignment Google Classroom **(jangan di-ZIP)**
+- Kumpulkan semua source code dengan format **NamaKelas_PSDASADAT04_NIM_NamaLengkap.zip**
+- Contoh **A_PSDASADAT02_L0122002_AbrahamWillemHersubagyo.zip**
+- Assignment Google Classroom **(jangan di-ZIP)**
 
 ## Nomor 1 - Set
 
-Lengkapi source code berikut dengan mengikuti instruksinya: **(bobot: 30%)**
+Lengkapi source code berikut dengan mengikuti instruksinya: **(bobot: 25%)**
+
+```java
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -53,12 +57,12 @@ public class Main {
         }
     }
 }
-
+```
 Benarkan kode di atas jika dirasa ada kesalahan
 
 ### Nomor 2 - Map
 
-Buatlah sebuah program dengan ketentuan dasar sebagai berikut: (bobot: 70%)
+Buatlah sebuah program dengan ketentuan dasar sebagai berikut: **(bobot: 75%)**
 
 - Program ini merupakan program simulasi e-commerce sederhana yang memiliki database produk.
 - Tiap produk memiliki kode, nama, stok, dan harga.
@@ -66,4 +70,4 @@ Buatlah sebuah program dengan ketentuan dasar sebagai berikut: (bobot: 70%)
 - Anda bisa memilih salah satu produk yang akan dibeli (berdasarkan kode) dan menginputkan jumlahnya yang akan dibeli.
 - Ketika anda sudah membeli produk, kurangi stok produk dengan jumlah yang anda beli. Sesuaikan juga saldo akhir anda.
 
-Buatlah sekreatif mungkin dalam bahasa C++ menggunakan bantuan map!
+Buatlah sekreatif mungkin dalam bahasa Java menggunakan Map!
