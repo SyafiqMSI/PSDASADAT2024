@@ -3,7 +3,7 @@
 Note:
 
 - Kerjakan dengan bahasa Java
-- Kumpulkan semua source code dengan format **Kelas_PSDA04_NIM_Nama Lengkap_Nomor Soal.cpp** dalam assignment Google Classroom **(jangan di-ZIP)**
+- Kumpulkan semua source code dengan format **Kelas_PSDA04_NIM_Nama Lengkap_Nomor Soal.java** dalam assignment Google Classroom **(jangan di-ZIP)**
 
 ## Nomor 1 - Set
 
