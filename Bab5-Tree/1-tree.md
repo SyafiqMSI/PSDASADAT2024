@@ -21,7 +21,7 @@ Contoh implementasi dari struktur data Tree adalah direktori simbolis untuk berk
 
 Sebagai sebuah struktur data, Tree memiliki beberapa operasi yang dapat digunakan untuk memanipulasi data yang disimpan didalamnya. Operasi-operasi tersebut adalah `insertion`, `deletion`, dan `traversal`
 
-Sebelum membuat operasi-operasi tersebut, kita harus membuat struktur data Tree kita terlebih dahulu, karena C++ tidak memiliki struktur Tree bawaan. Implementasi Tree dapat dilakukan dengan berbagai cara, misalkan menggunakan class dan pointer untuk menandakan hubungan. Namun, kita akan menggunakan struct untuk menyimpan data dan vector untuk menyimpan children-children dari Tree kita.
+Sebelum membuat operasi-operasi tersebut, kita harus membuat struktur data Tree kita terlebih dahulu, karena Java tidak memiliki struktur Tree bawaan. Implementasi Tree dapat dilakukan dengan berbagai cara, misalkan menggunakan class dan pointer untuk menandakan hubungan. Namun, kita akan menggunakan struct untuk menyimpan data dan vector untuk menyimpan children-children dari Tree kita.
 
 ```java
 // ...
