@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "map",
+      "request": "launch",
+      "mainClass": "map",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
+      "name": "favnumber",
+      "request": "launch",
+      "mainClass": "Source.Bab5.favnumber",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
+      "name": "favnumber",
+      "request": "launch",
+      "mainClass": "favnumber",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
       "name": "stl_queue",
       "request": "launch",
       "mainClass": "Source.Bab1.stl_queue",
@@ -22,8 +43,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/.KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab1",
-      "program": "e:/.KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab1/build/Debug/outDebug",
+      "cwd": "e:/KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab4",
+      "program": "e:/KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab4/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

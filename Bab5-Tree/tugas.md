@@ -1,0 +1,15 @@
+No  | Cuaca     | Suhu      | Kelembaban | Berangin | Main 
+1.  | Cerah     | Panas     | Tinggi     | Salah    | Tidak 
+2.  | Cerah     | Panas     | Tinggi     | Benar    | Tidak 
+3.  | Berawan   | Panas     | Tinggi     | Salah    | Ya 
+4.  | Hujan     | Sejuk     | Tinggi     | Salah    | Ya 
+5.  | Hujan     | Dingin    | Normal     | Salah    | Ya 
+6.  | Hujan     | Dingin    | Normal     | Benar    | Ya 
+7.  | Berawan   | Dingin    | Normal     |  Benar   | Ya 
+8.  | Cerah     | Sejuk     | Tinggi     | Salah    | Tidak 
+9.  | Cerah     | Dingin    | Normal     | Salah    | Ya 
+10. | Hujan     | Sejuk     | Normal     | Salah    | Ya 
+11. | Cerah     | Sejuk     | Normal     | Benar    | Ya 
+12. | Berawan   | Sejuk     | Tinggi     | Benar    | Ya 
+13. | Berawan   | Panas     | Normal     | Salah    | Ya 
+14. | Hujan     | Sejuk     | Tinggi     | Benar    | Tidak
