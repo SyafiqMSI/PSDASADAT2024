@@ -62,4 +62,4 @@ Buatlah sebuah program dengan ketentuan dasar sebagai berikut: **(bobot: 70%)**
 - Anda bisa memilih salah satu produk yang akan dibeli (berdasarkan kode) dan menginputkan jumlahnya yang akan dibeli.
 - Ketika anda sudah membeli produk, kurangi stok produk dengan jumlah yang anda beli. Sesuaikan juga saldo akhir anda.
 
-Buatlah sekreatif mungkin dalam bahasa C++ menggunakan bantuan map!
+Buatlah sekreatif mungkin dalam bahasa Java menggunakan bantuan map!
