@@ -1,7 +1,7 @@
 package Bab2;
 import java.util.Scanner;
 
-public class Iterasi {
+public class iterasi {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n;

@@ -4,7 +4,7 @@ Note:
 
 - Kerjakan dengan bahasa Java
 - Kumpulkan semua source code dengan format **NamaKelas_PSDASADAT04_NIM_NamaLengkap.zip**
-- Contoh **A_PSDASADAT02_L0122004_AbrahamWillemHersubagyo.zip**
+- Contoh **A_PSDASADAT02_L0122004_AbrahamWillemHersubagyo.java**
 - Assignment Google Classroom **(jangan di-ZIP)**
 
 ## Nomor 1 - Set

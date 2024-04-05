@@ -1,7 +1,7 @@
 package Bab2;
 import java.util.Scanner;
 
-public class Rekursi {
+public class rekursi {
     public static int hitungFaktorial(int input) {
         if (input > 1) {
             return input * hitungFaktorial(input - 1);
