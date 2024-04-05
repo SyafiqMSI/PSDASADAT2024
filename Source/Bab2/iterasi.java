@@ -1,3 +1,4 @@
+package Bab2;
 import java.util.Scanner;
 
 public class Iterasi {

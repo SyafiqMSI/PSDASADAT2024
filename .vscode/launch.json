@@ -43,8 +43,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab4",
-      "program": "e:/KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab4/build/Debug/outDebug",
+      "cwd": "e:/KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab2",
+      "program": "e:/KULIAH/SEMESTER-4/PSDASADAT2024/Source/Bab2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
