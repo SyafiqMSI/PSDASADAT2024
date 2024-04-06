@@ -3,8 +3,8 @@
 Note:
 
 - Kerjakan dengan bahasa Java
-- Kumpulkan semua source code dengan format **NamaKelas_PSDASADAT04_NIM_NamaLengkap.zip**
-- Contoh **A_PSDASADAT02_L0122004_AbrahamWillemHersubagyo.java**
+- Kumpulkan semua source code dengan format **NamaKelas_PSDASADAT04_NIM_NamaLengkap_NomorSoal.zip**
+- Contoh **A_PSDASADAT04_L0122004_AbrahamWillemHersubagyo_1.java**
 - Assignment Google Classroom **(jangan di-ZIP)**
 
 ## Nomor 1 - Set
