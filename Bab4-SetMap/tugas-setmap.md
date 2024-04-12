@@ -3,7 +3,7 @@
 Note:
 
 - Kerjakan dengan bahasa Java
-- Kumpulkan semua source code dengan format **NamaKelas_PSDASADAT04_NIM_NamaLengkap_NomorSoal.zip**
+- Kumpulkan semua source code dengan format **NamaKelas_PSDASADAT04_NIM_NamaLengkap_NomorSoal.java**
 - Contoh **A_PSDASADAT04_L0122004_AbrahamWillemHersubagyo_1.java**
 - Assignment Google Classroom **(jangan di-ZIP)**
 
