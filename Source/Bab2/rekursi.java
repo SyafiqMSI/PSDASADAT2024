@@ -18,5 +18,6 @@ public class rekursi {
         int angka = scanner.nextInt();
 
         System.out.println(angka + "! = " + hitungFaktorial(angka));
+        scanner.close();
     }
 }

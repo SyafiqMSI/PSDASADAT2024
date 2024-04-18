@@ -1,4 +1,4 @@
-package Source.Bab1;
+package Bab1;
 import java.util.Stack;
 
 public class stl_stack {

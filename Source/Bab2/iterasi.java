@@ -11,6 +11,7 @@ public class iterasi {
         n = input.nextInt();
         hasil = factorial(n);
         System.out.println(n + "=" + hasil);
+        input.close();
     }
 
     public static long factorial(long a) {

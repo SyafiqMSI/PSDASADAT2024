@@ -1,4 +1,4 @@
-package Source.Bab1;
+package Bab1;
 import java.util.LinkedList;
 import java.util.ListIterator;
 

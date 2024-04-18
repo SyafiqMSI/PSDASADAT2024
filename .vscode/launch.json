@@ -3,6 +3,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "BinarySearchTree",
+      "request": "launch",
+      "mainClass": "BinarySearchTree",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
+      "name": "BST",
+      "request": "launch",
+      "mainClass": "BST",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
       "name": "map",
       "request": "launch",
       "mainClass": "map",

@@ -17,11 +17,5 @@ public class set1 {
             System.out.print(iterator.next() + " ");
         }
         System.out.println();
-
-        System.out.println("Penelurusan mundur:");
-        Iterator<Integer> reverseIterator = favNumbers.descendingIterator();
-        while (reverseIterator.hasNext()) {
-            System.out.print(reverseIterator.next() + " ");
-        }
     }
 }

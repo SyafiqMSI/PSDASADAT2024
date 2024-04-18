@@ -1,6 +1,5 @@
 package Bab4;
 import java.util.HashSet;
-import java.util.Iterator;
 
 public class set3 {
     public static void main(String[] args) {
