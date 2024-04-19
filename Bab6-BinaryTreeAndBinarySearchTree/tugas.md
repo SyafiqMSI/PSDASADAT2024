@@ -11,4 +11,4 @@ Buatlah tree lalu convert tree tersebut menjadi binary search tree dengan terapk
 Note :
 - Kumpulkan source code dengan format:
     NamaKelas_PSDASADAT06_NIM_NamaLengkap.java
-- contoh: A_PSDASADAT06_L0122002_AbrahamWillemHersubagyo.java
+- Contoh: A_PSDASADAT06_L0122002_AbrahamWillemHersubagyo.java
