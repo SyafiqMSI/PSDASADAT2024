@@ -11,10 +11,6 @@ Jenis Tree yang paling umum digunakan adalah Binary Tree, yang sebenarnya memili
 
 Sebuah node Binary Tree berisi bagian-bagian berikut.
 
-1. Data
-2. Pointer ke anak kiri
-3. Pointer ke anak kanan
-
 ```java
 public class Main {
 
