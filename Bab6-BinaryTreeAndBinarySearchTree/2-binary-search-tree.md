@@ -227,7 +227,7 @@ class BinarySearchTree {
 		   /  \
 		  30   70
 		 / \   / \
-	    20 40 60 80 */
+	    	20 40 60 80 */
         Node root = null;
         root = insert(root, 50);
         root = insert(root, 30);
