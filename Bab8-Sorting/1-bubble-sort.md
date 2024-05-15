@@ -19,36 +19,35 @@ Bubble sort adalah algoritma pengurutan sederhana yang bekerja dengan membanding
 ### Contoh Penerapan
 berikut source code untuk menerapkan bubble sort pada array [4, 1, 2, 3]
 
-```cpp
-#include <iostream>
-using namespace std;
-
-void bubbleSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - 1 - i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+```java
+public class Main {
+    static void bubbleSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
             }
         }
     }
-}
 
-int main() {
-    int array[] = {4, 2, 3, 1};
-    int size = sizeof(array) / sizeof(array[0]);
+    public static void main(String[] args) {
+        int[] array = {4, 2, 3, 1};
+        int size = array.length;
 
-    bubbleSort(array, size);
+        bubbleSort(array);
 
-    cout << "Sorted array: ";
-    for (int i = 0; i < size; i++) {
-        cout << array[i] << " ";
+        System.out.print("Sorted array: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
     }
-    cout << endl;
-
-    return 0;
 }
+
 ```
 
 ## Tambahan

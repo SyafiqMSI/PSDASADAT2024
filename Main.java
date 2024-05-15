@@ -1,100 +1,125 @@
-class BinarySearchTree {
+import java.util.LinkedList;
+import java.util.Queue;
+
+// Java program to delete element in binary tree
+public class Main {
+
+    /* A binary tree node has key, pointer to left
+    child and a pointer to right child */
     static class Node {
         int key;
         Node left, right;
+    }
 
-        // Constructor
-        Node(int item) {
-            key = item;
-            left = right = null;
+    /* function to create a new node of tree and
+    return pointer */
+    static Node newNode(int key) {
+        Node temp = new Node();
+        temp.key = key;
+        temp.left = temp.right = null;
+        return temp;
+    }
+
+    /* Inorder traversal of a binary tree*/
+    static void inorder(Node temp) {
+        if (temp == null)
+            return;
+        inorder(temp.left);
+        System.out.print(temp.key + " ");
+        inorder(temp.right);
+    }
+
+    /* function to delete the given deepest node
+    (d_node) in binary tree */
+    static void deletDeepest(Node root, Node d_node) {
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+
+        // Do level order traversal until last node
+        Node temp = null;
+        while (!q.isEmpty()) {
+            temp = q.poll();
+            if (temp == d_node) {
+                temp = null;
+                return;
+            }
+            if (temp.right != null) {
+                if (temp.right == d_node) {
+                    temp.right = null;
+                    return;
+                } else
+                    q.add(temp.right);
+            }
+
+            if (temp.left != null) {
+                if (temp.left == d_node) {
+                    temp.left = null;
+                    return;
+                } else
+                    q.add(temp.left);
+            }
         }
     }
 
-    // Utility function to create a new BST node
-    static Node newNode(int item) {
-        return new Node(item);
-    }
-
-    // Utility function to perform inorder traversal of BST
-    static void inorder(Node root) {
-        if (root != null) {
-            inorder(root.left);
-            System.out.print(root.key + " ");
-            inorder(root.right);
-        }
-    }
-
-    // Utility function to insert a new node with given key in BST
-    static Node insert(Node node, int key) {
-        if (node == null)
-            return newNode(key);
-        if (key < node.key)
-            node.left = insert(node.left, key);
-        else if (key > node.key)
-            node.right = insert(node.right, key);
-        return node;
-    }
-
-    // Utility function to find the node with minimum key value in a given BST
-    static Node minValueNode(Node node) {
-        Node current = node;
-        while (current != null && current.left != null)
-            current = current.left;
-        return current;
-    }
-
-    // Utility function to delete the node with given key in BST
-    static Node deleteNode(Node root, int key) {
+    /* function to delete element in binary tree */
+    static Node deletion(Node root, int key) {
         if (root == null)
-            return root;
-        if (key < root.key)
-            root.left = deleteNode(root.left, key);
-        else if (key > root.key)
-            root.right = deleteNode(root.right, key);
-        else {
-            if (root.left == null)
-                return root.right;
-            else if (root.right == null)
-                return root.left;
-            root.key = minValueNode(root.right).key;
-            root.right = deleteNode(root.right, root.key);
+            return null;
+
+        if (root.left == null && root.right == null) {
+            if (root.key == key)
+                return null;
+            else
+                return root;
+        }
+
+        Queue<Node> q = new LinkedList<>();
+        q.add(root);
+
+        Node temp = null;
+        Node key_node = null;
+
+        // Do level order traversal to find deepest
+        // node(temp) and node to be deleted (key_node)
+        while (!q.isEmpty()) {
+            temp = q.poll();
+
+            if (temp.key == key)
+                key_node = temp;
+
+            if (temp.left != null)
+                q.add(temp.left);
+
+            if (temp.right != null)
+                q.add(temp.right);
+        }
+
+        if (key_node != null) {
+            int x = temp.key;
+            deletDeepest(root, temp);
+            key_node.key = x;
         }
         return root;
     }
 
     // Driver code
     public static void main(String[] args) {
-	/* Let us create following BST
-		    50
-		   /  \
-		  30   70
-		 / \   / \
-	    20 40 60 80 */
-        Node root = null;
-        root = insert(root, 50);
-        root = insert(root, 30);
-        root = insert(root, 20);
-        root = insert(root, 40);
-        root = insert(root, 70);
-        root = insert(root, 60);
-        root = insert(root, 80);
+        Node root = newNode(10);
+        root.left = newNode(11);
+        root.left.left = newNode(7);
+        root.left.right = newNode(12);
+        root.right = newNode(9);
+        root.right.left = newNode(15);
+        root.right.right = newNode(8);
 
-        System.out.println("Inorder traversal of the given tree:");
+        System.out.print("Inorder traversal before deletion : ");
         inorder(root);
+        System.out.println();
 
-        System.out.println("\nDelete 20:");
-        root = deleteNode(root, 20);
-        System.out.println("Inorder traversal of the modified tree:");
-        inorder(root);
+        int key = 11;
+        root = deletion(root, key);
 
-        System.out.println("\nDelete 30:");
-        root = deleteNode(root, 30);
-        System.out.println("Inorder traversal of the modified tree:");
-        inorder(root);
-
-        System.out.println("\nDelete 50:");
-        root = deleteNode(root, 50);
-        System.out.println("Inorder traversal of the modified tree:");
+        System.out.print("Inorder traversal after deletion : ");
         inorder(root);
     }
 }

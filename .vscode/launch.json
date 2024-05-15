@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "quicksort",
+      "request": "launch",
+      "mainClass": "Bab9.quicksort",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
+      "name": "bogosort",
+      "request": "launch",
+      "mainClass": "Bab9.bogosort",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
       "name": "BinarySearchTree",
       "request": "launch",
       "mainClass": "BinarySearchTree",

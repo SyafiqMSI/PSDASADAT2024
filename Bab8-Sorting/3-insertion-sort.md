@@ -17,39 +17,36 @@ Insertion sort adalah algoritma pengurutan sederhana yang bekerja dengan membagi
 - Tidak efisien untuk reverse sorting (pengurutan terbalik)
 - Penggunaan memori yang tidak efisien
 
-```cpp
-#include <iostream>
-using namespace std;
+```java
+public class Main {
+    static void insertionSort(int[] arr) {
+        int n = arr.length;
+        for (int i = 1; i < n; i++) {
+            int key = arr[i];
+            int j = i - 1;
 
-void insertionSort(int arr[], int n) {
-    for (int i = 1; i < n; i++) {
-        int key = arr[i];
-        int j = i - 1;
-
-        while (j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j];
-            j--;
+            while (j >= 0 && arr[j] > key) {
+                arr[j + 1] = arr[j];
+                j--;
+            }
+            
+            arr[j + 1] = key;
         }
-        
-        arr[j + 1] = key;
+    }
+
+    public static void main(String[] args) {
+        int[] array = {23, 56, 9, 103, 77};
+        int size = array.length;
+
+        insertionSort(array);
+
+        System.out.print("Sorted array: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
     }
 }
-
-int main() {
-    int array[] = {23, 56, 9, 103, 77};
-    int size = sizeof(array) / sizeof(array[0]);
-
-    insertionSort(array, size);
-
-    cout << "Sorted array: ";
-    for (int i = 0; i < size; i++) {
-        cout << array[i] << " ";
-    }
-    cout << endl;
-
-    return 0;
-}
-
 ```
 
 ## Tambahan
