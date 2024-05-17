@@ -5,7 +5,7 @@ a. 100 bilangan bulat
 b. 1000 bilangan bulat 
 c. 10.000 bilangan bulat
 
-opsional (nilai tambahan)
+###### Opsional (nilai tambahan)
 d. 100.000 bilangan bulat 
 e. 1.000.000 bilangan 
 
