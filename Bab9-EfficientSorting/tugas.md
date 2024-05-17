@@ -1,13 +1,13 @@
 # Tugas Implementasi Sorting
 
 Implementasikan algoritma sorting berikut ini menggunakan:
-a. 100 bilangan bulat 
-b. 1000 bilangan bulat 
-c. 10.000 bilangan bulat
+- 100 bilangan bulat
+-  1000 bilangan bulat
+-   10.000 bilangan bulat
 
-###### Opsional (nilai tambahan)
-d. 100.000 bilangan bulat 
-e. 1.000.000 bilangan 
+#### Opsional (nilai tambahan)
+- 100.000 bilangan bulat
+- 1.000.000 bilangan 
 
 Dengan menggunakan algoritma:
 
