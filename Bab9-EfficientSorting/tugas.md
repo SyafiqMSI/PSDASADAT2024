@@ -2,8 +2,8 @@
 
 Implementasikan algoritma sorting berikut ini menggunakan:
 - 100 bilangan bulat
--  1000 bilangan bulat
--   10.000 bilangan bulat
+- 1000 bilangan bulat
+- 10.000 bilangan bulat
 
 #### Opsional (nilai tambahan)
 - 100.000 bilangan bulat
@@ -21,7 +21,7 @@ Implementasikan algoritma sorting berikut ini menggunakan:
 
 5.Merge Sort: Implementasikan algoritma Merge Sort untuk mengurutkan bilangan-bilangan dalam struktur data. 
 
-Lampirkan Screenshot runtime yang muncul setelah mengolah data dalam bentuk laporan, dan simpulkan setiap algoritmanya
+#### Lampirkan Screenshot runtime yang muncul setelah mengolah data dalam bentuk laporan, dan simpulkan setiap algoritmanya
 
 ## Format Pengumpulan
 Kelas_PSDA06_NIM_NamaLengkap_Nomor.cpp
