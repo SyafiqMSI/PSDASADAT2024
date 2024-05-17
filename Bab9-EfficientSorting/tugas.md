@@ -7,9 +7,9 @@ Implementasikan algoritma sorting berikut ini menggunakan:
 
 #### Opsional (nilai tambahan)
 - 100.000 bilangan bulat
-- 1.000.000 bilangan 
+- 1.000.000 bilangan bulat
 
-Dengan menggunakan algoritma:
+## Dengan menggunakan algoritma:
 
 1.Bubble Sort: Implementasikan algoritma Bubble Sort untuk mengurutkan bilangan-bilangan dalam struktur data.
 
