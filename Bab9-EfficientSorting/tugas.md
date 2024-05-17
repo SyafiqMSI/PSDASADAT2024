@@ -31,4 +31,4 @@ Contoh: C_PSDA06_L0522001_AndrianKornelis_1.cpp
 Contoh: C_PSDA06_L0522001_AndrianKornelis.pdf
 
 ## Batas Pengumpulan
-29 Mei 2023, 23:59pm
+27 Mei 2023, 23:59pm
