@@ -11,15 +11,15 @@ e. 1.000.000 bilangan
 
 Dengan menggunakan algoritma:
 
-1.Bubble Sort: Implementasikan algoritma Bubble Sort untuk mengurutkan elemen-elemen dalam struktur data.
+1.Bubble Sort: Implementasikan algoritma Bubble Sort untuk mengurutkan bilangan-bilangan dalam struktur data.
 
-2.Selection Sort: Implementasikan algoritma Selection Sort untuk mengurutkan elemen-elemen dalam struktur data. Sama seperti pada Bubble Sort, pastikan untuk menangani semua jenis tipe data.
+2.Selection Sort: Implementasikan algoritma Selection Sort untuk mengurutkan bilangan-bilangan dalam struktur data. Sama seperti pada Bubble Sort, pastikan untuk menangani semua jenis tipe data.
 
-3.Insertion Sort: Implementasikan algoritma Insertion Sort untuk mengurutkan elemen-elemen dalam struktur data. 
+3.Insertion Sort: Implementasikan algoritma Insertion Sort untuk mengurutkan bilangan-bilangan dalam struktur data. 
 
-4.Quick Sort: Implementasikan algoritma Quick Sort untuk mengurutkan elemen-elemen dalam struktur data.
+4.Quick Sort: Implementasikan algoritma Quick Sort untuk mengurutkan bilangan-bilangan dalam struktur data.
 
-5.Merge Sort: Implementasikan algoritma Merge Sort untuk mengurutkan elemen-elemen dalam struktur data. 
+5.Merge Sort: Implementasikan algoritma Merge Sort untuk mengurutkan bilangan-bilangan dalam struktur data. 
 
 Lampirkan Screenshot runtime yang muncul setelah mengolah data dalam bentuk laporan, dan simpulkan setiap algoritmanya
 
