@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "mst_kruskal",
+      "request": "launch",
+      "mainClass": "mst_kruskal",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
       "name": "quicksort",
       "request": "launch",
       "mainClass": "Bab9.quicksort",
