@@ -1,3 +1,12 @@
+# Hash Functions
+Hash functions adalah fungsi matematis yang mengonversi input (teks atau data) menjadi nilai hash yang tetap panjangnya, biasanya dalam format yang sulit untuk dibalik. Hash digunakan untuk mengenkripsi data untuk keperluan penyimpanan dan verifikasi integritas data. Beberapa karakteristik hash functions yang penting adalah:
+
+- Deterministik: Satu input akan selalu menghasilkan output yang sama.
+- Cepat: Hash functions harus dapat menghasilkan nilai hash dengan cepat.
+- Tidak dapat dibalik: Tidak mungkin untuk mendapatkan input asli dari nilai hash.
+- Contoh hash functions termasuk MD5, SHA-1, dan SHA-256.
+
+
 # Kriptografi
 
 Kriptografi adalah ilmu yang berkaitan dengan mengamankan informasi dengan mengubahnya menjadi bentuk yang tidak dapat dibaca tanpa memiliki kunci rahasia untuk mendekripsinya. Dalam pembelajaran ini, kita akan mempelajari bagaimana menggunakan Java untuk melakukan enkripsi dan dekripsi teks sederhana.
