@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SHA256Example",
+      "request": "launch",
+      "mainClass": "SHA256Example",
+      "projectName": "PSDASADAT2024_812bdaa0"
+    },
+    {
+      "type": "java",
       "name": "mst_kruskal",
       "request": "launch",
       "mainClass": "mst_kruskal",

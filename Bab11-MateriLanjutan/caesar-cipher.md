@@ -1,4 +1,5 @@
 # Hash Functions
+
 Hash functions adalah fungsi matematis yang mengonversi input (teks atau data) menjadi nilai hash yang tetap panjangnya, biasanya dalam format yang sulit untuk dibalik. Hash digunakan untuk mengenkripsi data untuk keperluan penyimpanan dan verifikasi integritas data. Beberapa karakteristik hash functions yang penting adalah:
 
 - Deterministik: Satu input akan selalu menghasilkan output yang sama.
@@ -80,7 +81,7 @@ public class SHA256Example {
             BigInteger no = new BigInteger(1, messageDigest);
             String hashText = no.toString(16);
             while (hashText.length() < 64) {
-                hashText = "0
+                hashText = "0";
                 hashText = "0" + hashText;
             }
             return hashText;
