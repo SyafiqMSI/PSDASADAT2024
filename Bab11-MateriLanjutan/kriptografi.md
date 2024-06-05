@@ -104,8 +104,11 @@ public class MD5Example {
         System.out.println("MD5 Hash: " + md5Hash);
     }
 }
-
 ```
+
+## MD2 Hash
+```java
+
 
 ## SHA-1 Hash
 ```java
